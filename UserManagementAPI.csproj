@@ -5,6 +5,11 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
-
+  <ItemGroup>
+    <Compile Remove="UserManagementAPI.Tests\**" />
+    <Content Remove="UserManagementAPI.Tests\**" />
+    <EmbeddedResource Remove="UserManagementAPI.Tests\**" />
+    <None Remove="UserManagementAPI.Tests\**" />
+  </ItemGroup>
 
 </Project>

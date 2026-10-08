@@ -140,3 +140,6 @@ public record User(int Id, string FirstName, string LastName, string Email, stri
 public record CreateUserRequest(string FirstName, string LastName, string Email, string Department, bool IsActive = true);
 
 public record UpdateUserRequest(string FirstName, string LastName, string Email, string Department, bool IsActive = true);
+
+public partial class Program { }
+
