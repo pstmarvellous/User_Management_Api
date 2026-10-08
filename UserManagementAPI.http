@@ -1,0 +1,46 @@
+@UserManagementAPI_HostAddress = https://localhost:5001
+
+### Get all users
+GET {{UserManagementAPI_HostAddress}}/api/users
+Accept: application/json
+
+###
+
+### Get user by id
+GET {{UserManagementAPI_HostAddress}}/api/users/1
+Accept: application/json
+
+###
+
+### Create a new user
+POST {{UserManagementAPI_HostAddress}}/api/users
+Content-Type: application/json
+
+{
+  "firstName": "Daniel",
+  "lastName": "Smith",
+  "email": "daniel.smith@techhive.com",
+  "department": "Finance",
+  "isActive": true
+}
+
+###
+
+### Update an existing user
+PUT {{UserManagementAPI_HostAddress}}/api/users/2
+Content-Type: application/json
+
+{
+  "firstName": "Marcus",
+  "lastName": "Lee",
+  "email": "marcus.lee@techhive.com",
+  "department": "Operations",
+  "isActive": true
+}
+
+###
+
+### Delete a user
+DELETE {{UserManagementAPI_HostAddress}}/api/users/3
+
+###
